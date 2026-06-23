@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -10,11 +10,11 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
+    "types": ["node"], 
     "paths": {
-      "@pages/*": ["Pages/*"],
-      "@utils/*": ["utils/*"],
-      "@testdata/*": ["test-data/*"]
+      "@pages/*": ["./Pages/*"],
+      "@utils/*": ["./utils/*"],
+      "@testdata/*": ["./test-data/*"]
     }
   },
   "include": [

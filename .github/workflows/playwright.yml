@@ -54,3 +54,11 @@ jobs:
       if: always()
       id: deployment
       uses: actions/deploy-pages@v4
+      # 🎯 આ સ્ટેપ જોબના અંતે લિંક લોગ્સમાં પ્રોપર પ્રિન્ટ કરી આપશે
+    - name: Output Live Report URL
+      if: always()
+      run: |
+        echo "========================================================"
+        echo "🚀 YOUR LIVE PLAYWRIGHT REPORT IS READY BELOW:"
+        echo "🔗 https://gajerabrijesh11.github.io/playwright-ts/"
+        echo "========================================================"
