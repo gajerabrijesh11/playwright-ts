@@ -70,5 +70,28 @@
       "keyword": "summit",
       "expectedCard": "summit"
     }
+  ],
+  "RegisterUser": [
+    {
+      "scenario": "Invalid Email",
+      "email": "testgmail.com",
+      "Password": "gBRij@26",
+      "Re-Password": "gBRij@26"
+      
+    },
+    {
+      "scenario": "Invalid Password",
+      "email": "testbg@gmail.com",
+      "Password": "123",
+      "Re-Password": "123"
+      
+    },
+    {
+      "scenario": "Password not matching",
+      "email": "testbg@gmail.com",
+      "Password": "gBRij@26",
+      "Re-Password": "123",
+      "Error": "Passwords do not match"
+    }
   ]
 }

@@ -25,10 +25,18 @@ export interface SearchEventsData {
   keyword: string;
   expectedCard: string;
 }
+export interface RegisterUser {
+  scenario: string;
+  email: string;
+  Password: string;
+  "Re-Password": string;
+  Error: string;
+}
 export interface UserDataJson {
   validUser: ValidUser;
   Categorydropdown: CategoryData[];
   Combinedropdownselection: CombineDropdownSelectionData[];
   DDTLogindata: DDTLoginData[];
   SearchEvents: SearchEventsData[];
+  RegisterUser: RegisterUser[];
 }
